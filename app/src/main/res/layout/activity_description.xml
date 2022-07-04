@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity.DescriptionActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/etWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_outline"
+            android:hint="@string/work_tag_not_more_than_30_characters"
+            android:maxLength="30"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/etWork"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/et_outline"
+            android:gravity="start"
+            android:hint="Description"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/txtselectCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDescription"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_category"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDaily"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtselectCategory"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:text="@string/daily"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnWeekly"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnDaily"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:text="@string/weekly"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnMonthly"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnWeekly"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:text="@string/monthly"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnImportant"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnMonthly"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:text="@string/important"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDream"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnImportant"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineProvider="bounds"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:text="@string/dream"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:id="@+id/llReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDream"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="5.1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.1"
+                android:paddingStart="20dp"
+                android:text="Set Reminder :"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btnRemind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:focusable="true"
+                android:src="@drawable/ic_work_left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTimer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llReminder"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="110dp"
+            android:orientation="horizontal"
+            android:weightSum="6.5"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etHour"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:maxLength="2"
+                android:inputType="number"
+                android:hint="hh"
+                android:maxLines="1"
+                android:background="@drawable/et_outline"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=":"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:hint="mm"
+                android:maxLength="2"
+                android:background="@drawable/et_outline"
+                android:maxLines="1" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnAmPm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="AM"
+                android:maxLength="2"
+                android:background="@drawable/et_outline"
+                android:outlineProvider="bounds"
+                android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llTimer"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="100dp"
+            android:orientation="horizontal"
+            android:weightSum="6.5"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:maxLength="2"
+                android:inputType="number"
+                android:hint="dd"
+                android:maxLines="1"
+                android:background="@drawable/et_outline"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=":"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:hint="mm"
+                android:maxLength="2"
+                android:background="@drawable/et_outline"
+                android:maxLines="1" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=":"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtYear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:hint="yyyy"
+                android:background="@drawable/et_outline"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/circular_shape"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+

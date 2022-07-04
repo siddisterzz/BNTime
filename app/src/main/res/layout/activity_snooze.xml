@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SnoozeActivity"
+    android:background="#03d6f8">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Gif"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/ItemTag"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alarm" />
+    <TextView
+        android:id="@+id/ItemTag"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="GO for a walk"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+/>
+
+    <Button
+        android:id="@+id/btnPressHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="90dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/circular_shape"
+        android:text="press here" />
+
+</RelativeLayout>

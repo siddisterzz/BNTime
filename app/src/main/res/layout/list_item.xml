@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginTop="2dp"
+    android:alpha="0.85"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/llWork"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#002DC5A1"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:paddingStart="3dp"
+            android:src="@drawable/ic_work_left" />
+
+        <TextView
+            android:id="@+id/txtWork"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.25"
+            android:gravity="center_vertical"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="1dp"
+            android:text="Work"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:layout_gravity="top"
+            android:src="@drawable/ic_cross"
+            android:contentDescription="@string/close" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llWork2"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.1"
+            android:text="@string/status"
+            android:textColor="#E91E63"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.88"
+            android:text="On Progress"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_weight="0.02"
+            android:id="@+id/imgOpenDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_description" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="65dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="5sp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+

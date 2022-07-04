@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/daily"
+            android:icon="@drawable/ic_my_day"
+            android:title="Daily" />
+        <item
+            android:id="@+id/weekly"
+            android:icon="@drawable/ic_calendar"
+            android:title="Weekly" />
+        <item
+            android:id="@+id/monthly"
+            android:icon="@drawable/ic_monthly"
+            android:title="Monthly" />
+        <item
+            android:id="@+id/Important"
+            android:icon="@drawable/ic_favourite"
+            android:title="Important" />
+        <item
+            android:id="@+id/Dream"
+            android:icon="@drawable/ic_dream"
+            android:title="Dream" />
+    </group>
+</menu>
